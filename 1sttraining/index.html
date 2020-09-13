@@ -7,17 +7,48 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <nav>
-       <div class="logo">codeconvy</div>
-       <label for="drop" class="toggle">menu</label>
-       <input type="checkboxk" id="drop">
-        <ul class="menu">
-            <li><a href="#">home</a></li>
-            <li>
-                <!-- first tier drop down -->
-                
-            </li>
-        </ul>
-    </nav>
+    <nav class="nav">
+        <div id="logo">Codeconvey</div>
+        <label for="drop" class="toggle" id="menu"> Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-1" class="toggle"><a href="#">WordPress +</a></label>
+                     <input type="checkbox" id="drop-1"/>
+                    <ul  class="hide show-1" >
+                        <li><a href="#">Themes</a></li>
+                        <li><a href="#">Plugins</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                    </ul> 
+                </li>
+                <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-2" class="toggle"><a href="#">Services+</a></label>
+                <input type="checkbox" id="drop-2"/>
+                <ul class="hide  show-2">
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Logo Design</a></li>
+                    <li>
+                       
+                    <!-- Second Tier Drop Down -->        
+                    <label for="drop-3" class="toggle"><a href="#">Coding ++</a</label>
+                         
+                    <input type="checkbox" id="drop-3"/>
+                    <ul class="hide  show-3">
+                        <li><a href="#">HTML/CSS</a></li>
+                        <li><a href="#">JavaScript/jQuery</a></li>
+                        <li><a href="#">PHP/MySQL</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
 </body>
 </html>

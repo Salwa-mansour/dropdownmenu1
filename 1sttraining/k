@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+nav{
+    background-color: #254441;
+    text-transform: capitalize;
+}
+#logo{
+    display: block;
+    padding: 0 30px;
+    float: left;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #fff;
+}
+nav:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav ul {
+    float: right;
+    padding: 0px;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+nav ul li {
+    margin: 0;
+    display: inline-block;/
+    float: left;
+    background-color: #254441;
+}
+
+nav a {
+    display: block;
+    padding: 14px 20px;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+}
+nav ul li ul li:hover{
+    background-color: #000000;
+
+}
+nav a:hover{
+    background-color: #000000;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    /* the same as the "line height"of nav a */
+    top: 60px;
+}
+/* display dropdowns on hover */
+nav ul li:hover ul{
+    display: inherit;
+}
+/* frist tier dropdown */
+nav ul ul li{
+    position: relative;
+    top: -60px;
+    /* has to be the same number as the "width" of "nav ul ul li" */ 
+    left: 170px;
+}
+/* change + in order change the deropdown symbol */
+li > a:after {
+    content: '+';
+}
+li >a:only-child:after {
+    content: '';
+}
+

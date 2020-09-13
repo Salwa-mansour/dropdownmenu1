@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav .hide,
+.nav input[type="checkbox"]
+{
+    display: none;
+}
+.nav #menu{
+    display: none;
+}
+.nav ul{
+    list-style: none;
+}
+.nav .show-1:clicked ~ .hide {
+    display: inline-block;
+}
